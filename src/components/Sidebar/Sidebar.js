@@ -44,7 +44,14 @@ export default function Sidebar() {
           </ul>
         </div>
         <div className="sidebar-footer">
-          <button className="btn btn-primary">New List</button>
+          <div class="task__controls">
+            <a href="#" type="button" id="addtaskbtn">
+              <span>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </span>
+              <span>New List</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

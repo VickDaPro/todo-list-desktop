@@ -1,0 +1,67 @@
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.todo {
+  margin-left: 265px;
+  height: 100%;
+  border: 1px soild black;
+  box-sizing: border-box;
+}
+
+.btn-user {
+  margin-left: auto;
+}
+
+.todo-header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-weight: var(--font-weight-5);
+  background: var(--input-gradient);
+  -webkit-box-shadow: var(--button-box-shadow);
+  box-shadow: var(--button-box-shadow);
+}
+
+.todo-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-weight: var(--font-weight-5);
+  background: var(--input-gradient);
+  -webkit-box-shadow: var(--button-box-shadow);
+  box-shadow: var(--button-box-shadow);
+}
+
+.todo-footer {
+  /* display: inline-block; */
+  align-self: flex-end;
+}
