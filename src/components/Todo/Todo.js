@@ -5,7 +5,7 @@ export default function Todo() {
   return (
     <div className="todo">
       <div className="todo-header">
-        <h3>Zapier</h3>
+        <h3 className="todo-title">Zapier</h3>
         <button className="btn-user todo-header-btn">
           <i class="fa fa-user-plus" aria-hidden="true"></i>
         </button>
@@ -15,18 +15,61 @@ export default function Todo() {
       </div>
       <div className="todo-body">
         <div className="todo-item">
-          {/* <div className="todo-item-body">
-              <p>
-                <a href="#">
-                  <span>
-                    <i className="fas fa-star" />
-                  </span>
-                  <span>
-                    <i className="fas fa-star" />
-                  </span>
-                </a>
-              </p>
-            </div> */}
+          <ul className="task-list">
+            <li className="task-list-item">
+              <label className="task-list-item-label">
+                <input type="checkbox" />
+                <span>Buy groceries</span>
+              </label>
+              <span>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+            </li>
+          </ul>
+          <ul className="task-list">
+            <li className="task-list-item">
+              <label className="task-list-item-label">
+                <input type="checkbox" />
+                <span>Work on DSA</span>
+              </label>
+              <span>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+            </li>
+          </ul>
+          <ul className="task-list">
+            <li className="task-list-item">
+              <label className="task-list-item-label">
+                <input type="checkbox" />
+                <span>Wrap the task by 6pm today.</span>
+              </label>
+              <span>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+            </li>
+          </ul>
+          <ul className="task-list">
+            <li className="task-list-item">
+              <label className="task-list-item-label">
+                <input type="checkbox" />
+                <span>Work on sidebar styling</span>
+              </label>
+              <span>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+            </li>
+          </ul>
+          <ul className="task-list">
+            <li className="task-list-item">
+              <label className="task-list-item-label">
+                <input type="checkbox" />
+                <span>Have lunch at 2pm</span>
+              </label>
+              <span>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="todo-footer">
