@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { TextField, Button } from "@mui/material";
+import { TextField } from "@mui/material";
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { db } from "../src/config/firebase-config";
 import {
   collection,
@@ -52,11 +53,21 @@ function App() {
         </button>
       </div>
       <div className="ul-container">
-        <ul className="todo-ul">
-          {todos.map((item) => (
-            <Todo key={item.id} arr={item} />
-          ))}
-        </ul>
+        <DragDropContext>
+          <Droppable droppableId="todo-ul">
+            {(provided) => (
+              <ul
+                className="todo-ul"
+                {...provided.droppableProps}
+                ref={provided.innerRef}
+              >
+                {todos.map((item, id) => (
+                  <Todo key={item.id} arr={item} />
+                ))}
+              </ul>
+            )}
+          </Droppable>
+        </DragDropContext>
       </div>
       <form className="form">
         <TextField
